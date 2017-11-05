@@ -6,10 +6,12 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title> | Bootstrap 4 Admin</title>
-	<!-- Bootstrap CSS 4 -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<!-- Bootstrap Core CSS 4-beta.2 -->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" />
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 </head>
 <body class="fixed-nav sticky-footer bg-dark">
 	<!-- Navigation -->
@@ -86,6 +88,17 @@
 							<i class="fa fa-fw fa-circle"></i>
 						</span>
 					</a>
+					<div class="dropdown-menu" aria-labelledby="messagesDropdown">
+						<h6 class="dropdown-header">New Messages:</h6>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">
+							<strong>David Miller</strong>
+							<span class="small float-right text-muted">11:21 AM</span>
+							<div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item small" href="#">View all messages</a>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -114,10 +127,12 @@
 	</footer>
 
 	<!-- jQuery v3.2.1 -->
-	<script src="js/jquery.min.js"></script>
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
 	<!-- Popper 1.12.5 (umd) -->
-	<script src="js/popper.min.js"></script>
-	<!-- Bootstrap Javascript 4-beta.2 -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="vendor/popper.js/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap Core Javascript 4-beta.2 -->
+	<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Custom Javascript -->
+	<script src="assets/js/custom.js"></script>
 </body>
 </html>
